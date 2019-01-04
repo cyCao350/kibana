@@ -17,6 +17,7 @@ interface FunctionHelpDict {
 
 export const getFunctionHelp = (): FunctionHelpDict => {
   const i18n = i18nProvider.getInstance();
+
   return {
     all: {
       help: i18n.translate('xpack.canvas.functions.all.args.conditionHelpText', {
